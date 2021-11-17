@@ -134,7 +134,7 @@ section.commonMar{margin: 4rem 0;}
 .ap__goalsListing li{margin: 0 15px;position: relative;}
 .ap__goalsListing li::before{content:'';position:absolute;top:0;left:0;border-radius:10px;background-color:#79b62bc2;height:100%;width:100%;transition:all .4s ease;z-index:1;-webkit-backface-visibility:hidden;backface-visibility:hidden;opacity:0;visibility:hidden;}
 .ap__goalsListing li .ap__goalWrp{border-radius: 10px;overflow: hidden;}
-.ap__goalsListing li .ap__goalWrp img{max-width: 100%;border-radius: 10px;}
+.ap__goalsListing li .ap__goalWrp img{width:100%;max-width: 100%;border-radius: 10px;}
 .ap__goalsListing li:hover::before{transform: scale(0.9);visibility: visible;opacity: 1;}
 @keyframes fadeInUp{from{transform:translate3d(0,40px,0)}
 to{transform:translate3d(0,0,0);opacity:1}
@@ -147,7 +147,7 @@ to{transform:translate3d(0,0,0);opacity:1}
 .fadeInUp{opacity:0;animation-name:fadeInUp;-webkit-animation-name:fadeInUp;}
 
 .ap__goalContents{text-align: center;top: 35%; left: 0%;;z-index: 2;width: 100%;padding: 0 30px;display: none;}
-.ap__goalContents .ap__goalTitle{color: #003350;margin-bottom: 10px;}
+.ap__goalContents .ap__goalTitle{color: #FFF; text-decoration: underline;}
 .ap__goalContents .ap__common__para{color: #fff;}
 .ap__goalsListing li:hover .ap__goalContents{display: block;}
 .ap__viewMore{margin-top: 3.75rem;}
@@ -250,7 +250,7 @@ footer{padding:5rem 0 2.5rem 0;background-color: #A7AE9C;}
 .ap__otherCampList .ap__otherCampInfo .ap__takeAction{margin-top: .625rem;}
 .ap__campaignListing.ap__campaignPage li{margin-bottom: 30px;}
 
-.ap__goalsListing.ap__goalsDetails li{width: calc(33.33% - 20px);display: inline-block;margin: 0; margin-bottom: 30px;}
+.ap__goalsListing.ap__goalsDetails li{width: calc(33.33% - 20px);display: inline-block;margin: 0; margin-bottom: 30px; margin-left: 10px; margin-right: 10px;}
 
 @media screen and (max-width:1400px) {
 

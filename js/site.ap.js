@@ -1,25 +1,25 @@
 // JavaScript Document
 
 $(document).ready(function(){
-    
+
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 50){  
+    if ($(this).scrollTop() > 50){
         $('header').addClass("sticky");
     }
     else{
         $('header').removeClass("sticky");
     }
-   
+
   });
 
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 50){  
+    if ($(this).scrollTop() > 50){
         $('.headerMob').addClass("sticky");
     }
     else{
         $('.headerMob').removeClass("sticky");
     }
-   
+
   });
 
   if($('.ap__banner__slider').length > 0){
@@ -30,7 +30,7 @@ $(document).ready(function(){
       dots: false,
       fade:true,
       speed: 1000,
-     
+
       // autoplay: true,
       // autoplaySpeed: 1500,
 
@@ -60,10 +60,10 @@ $(document).ready(function(){
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            
+
           }
         },
-        
+
         ]
     });
   }
@@ -83,7 +83,7 @@ $(document).ready(function(){
 
   if($('.ap__goalsSlider').length > 0){
     $('.ap__goalsListing').slick({
-      slidesToShow: 3,
+      slidesToShow: 4,
       slidesToScroll: 1,
       arrows: false,
       dots: false,
@@ -104,10 +104,10 @@ $(document).ready(function(){
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            
+
           }
         },
-        
+
         ]
     });
   }
@@ -120,17 +120,17 @@ $(document).ready(function(){
 	$(this).toggleClass('button-open');
 	$menuWrap.toggleClass('menu-show');
 	});
-  
+
   $sidebarArrow.click(function() {
 	$(this).next().slideToggle(300);
 	});
 
   $('.mainDrop > a').on("click", function() {
-    
+
     if($(this).hasClass('active')){
 
       $(this).removeClass('active');
-      $(this).siblings('.ap__dropMenu').hide();  
+      $(this).siblings('.ap__dropMenu').hide();
 
     }else{
       $('.mainDrop > a').removeClass('active');
@@ -138,8 +138,8 @@ $(document).ready(function(){
       $(".ap__dropMenu").hide();
       $(this).siblings(".ap__dropMenu").show();
     }
-    
-    return false; 
+
+    return false;
   });
 
   if($('.popup-youtube').length > 0){
@@ -155,13 +155,13 @@ $(document).ready(function(){
   $('.counter').each(function() {
     var $this = $(this),
         countTo = $this.attr('data-count');
-    
+
     $({ countNum: $this.text()}).animate({
       countNum: countTo
     },
-  
+
     {
-  
+
       duration: 8000,
       easing:'linear',
       step: function() {
@@ -171,11 +171,11 @@ $(document).ready(function(){
         $this.text(this.countNum);
         //alert('finished');
       }
-  
-    });  
-    
-    
-  
+
+    });
+
+
+
   });
 });
 
