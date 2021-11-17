@@ -805,6 +805,9 @@ height: 450px;
 }
 
 @media screen and (max-width:550px){
+  .ap__common__para.np__common__para .Goal-1{
+    font-size: 1.25rem;
+  }
   .np-contentSec--lftWrp{
     padding:0;
   }
